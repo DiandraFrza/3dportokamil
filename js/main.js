@@ -75,22 +75,7 @@ function createConstellations() {
     // Konfigurasi material
   });
 
-  const zodiacConstellations = [
-    // Tambahkan data konstelasi
-  ];
-
-  zodiacConstellations.forEach((constellation) => {
-    const starPositions = new THREE.Float32BufferAttribute(
-      constellation.stars.flat(),
-      3
-    );
-    const starGeometry = new THREE.BufferGeometry();
-    starGeometry.setAttribute("position", starPositions);
-
-    const line = new THREE.Line(starGeometry, constellationMaterial);
-    scene.add(line);
-  });
-}
+  }
 createConstellations();
 
 function animate() {
